@@ -1,0 +1,55 @@
+/*
+	Drift by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+
+	h2 br, h3 br, h4 br, h5 br, h6 br {
+		display: none;
+	}
+
+/* Section/Article */
+
+	header br {
+		display: none;
+	}
+
+/* Feature */
+
+	.feature {
+		padding-left: 0;
+		text-align: center;
+	}
+
+		.feature:before {
+			margin: 0 0 0.7em 0;
+			position: relative;
+		}
+
+		.feature p {
+			padding: 0 2em;
+		}
+
+
+/* Header */
+
+	#skel-layers-wrapper {
+		padding-top: 0;
+	}
+
+	#header {
+		font-size: 10pt;
+	}
+
+/* Banner */
+
+	#banner {
+		padding: 12em 2em;
+	}
+
