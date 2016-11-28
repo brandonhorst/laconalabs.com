@@ -46,7 +46,6 @@
 		@include vendor('background-image', (
 			'linear-gradient(45deg, #{transparentize(_palette(accent1), 0.3)} 5%, #{transparentize(_palette(accent2), 0.3)})'
 		));
-		overflow: hidden;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
@@ -145,7 +144,7 @@
 
 		h1 {
 			font-size: 4.35em;
-			font-weight: 900;
+			font-weight: 100;
 			letter-spacing: -0.035em;
 			line-height: 1em;
 			// text-shadow: 5px 5px 0px #000, -5px -5px 0px #000, 5px -5px 0px #000, -5px 5px 0px #000, ;
@@ -273,6 +272,7 @@
 	&:active {
 		background-color: _palette(nav-icon, active-bg);
 	}
+
 }
 
 /* Footer */
@@ -336,6 +336,23 @@
 				font-size: 11pt;
 			}
 
+			#header {
+				.actions {
+					li {
+						a {
+							width: 14em;
+						}
+					}
+				}
+
+				nav {
+					li {
+						width: 3em;
+						height: 3em;
+					}
+				}
+			}
+
 		/* BG */
 
 			// @include bg(_misc(bg-width) * 0.2);
@@ -353,6 +370,13 @@
 
 				nav {
 					font-size: 1em;
+
+					li {
+						line-height: inherit;
+						a:before {
+							font-size: 1em;
+						}
+					}
 				}
 			}
 
